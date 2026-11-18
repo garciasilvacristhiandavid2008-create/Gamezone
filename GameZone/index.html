@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="GameZone, descubre los videojuegos más populares del mundo.">
+
+    <title>GameZone | Mundo Gamer</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                GAME<span>ZONE</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#juegos">Videojuegos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content container">
+
+                <span class="hero-tag">BIENVENIDO AL UNIVERSO GAMER</span>
+
+                <h1>
+                    EXPLORA EL MUNDO
+                    <span>DE LOS VIDEOJUEGOS</span>
+                </h1>
+
+                <p>
+                    Descubre los videojuegos más populares,
+                    conoce sus historias y encuentra nuevas
+                    aventuras en un solo lugar.
+                </p>
+
+                <a href="#juegos" class="btn-primary">
+                    EXPLORAR JUEGOS
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- SECCION DE VIDEOJUEGOS -->
+        <section class="games-section container" id="juegos">
+
+            <div class="section-heading">
+
+                <span class="section-tag">NUESTRO CATÁLOGO</span>
+
+                <h2>VIDEOJUEGOS <span>POPULARES</span></h2>
+
+                <p>
+                    Conoce algunos de los videojuegos
+                    más conocidos y jugados del mundo.
+                </p>
+
+            </div>
+
+            <div class="games-grid" id="gamesGrid">
+
+                <!-- MINECRAFT -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/minecraft.jpg"
+                             alt="Videojuego Minecraft">
+                        <span class="game-category">AVENTURA</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Minecraft</h3>
+
+                        <p>
+                            Explora mundos infinitos, construye
+                            estructuras y sobrevive a diferentes
+                            aventuras utilizando bloques.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="minecraft">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- GTA V -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/gta-v.jpg"
+                             alt="Videojuego GTA V">
+                        <span class="game-category">ACCION</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Grand Theft Auto V</h3>
+
+                        <p>
+                            Descubre Los Santos en un mundo
+                            abierto lleno de misiones,
+                            personajes y aventuras.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="gta">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- FORTNITE -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/fortnite.jpg"
+                             alt="Videojuego Fortnite">
+                        <span class="game-category">BATALLA</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Fortnite</h3>
+
+                        <p>
+                            Participa en emocionantes batallas,
+                            construye estructuras y compite
+                            para conseguir la victoria.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="fortnite">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- FREE FIRE -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/free-fire.jpg"
+                             alt="Videojuego Free Fire">
+                        <span class="game-category">SUPERVIVENCIA</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Free Fire</h3>
+
+                        <p>
+                            Enfréntate a otros jugadores
+                            en partidas de supervivencia
+                            llenas de acción.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="freefire">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- CALL OF DUTY -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/call-of-duty.jpg"
+                             alt="Videojuego Call of Duty">
+                        <span class="game-category">ACCION</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Call of Duty</h3>
+
+                        <p>
+                            Experimenta combates intensos
+                            y diferentes modos de juego
+                            en una saga de acción.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="cod">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- GOD OF WAR -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/god-of-war.jpg"
+                             alt="Videojuego God of War">
+                        <span class="game-category">AVENTURA</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>God of War</h3>
+
+                        <p>
+                            Acompaña a Kratos y Atreus
+                            en una aventura épica inspirada
+                            en la mitología nórdica.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="godofwar">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- ROBLOX -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/roblox.jpg"
+                             alt="Videojuego Roblox">
+                        <span class="game-category">CREATIVIDAD</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Roblox</h3>
+
+                        <p>
+                            Explora miles de experiencias,
+                            juega con amigos y descubre
+                            mundos creados por usuarios.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="roblox">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- MINECRAFT LEGENDS -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="images/minecraft-legends.jpg"
+                             alt="Videojuego Minecraft Legends">
+                        <span class="game-category">ESTRATEGIA</span>
+                    </div>
+
+                    <div class="game-info">
+                        <h3>Minecraft Legends</h3>
+
+                        <p>
+                            Lidera ejércitos, protege aldeas
+                            y defiende el mundo de Minecraft
+                            frente a sus enemigos.
+                        </p>
+
+                        <button class="btn-details"
+                                data-game="legends">
+                            VER INFORMACIÓN
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="about-section" id="nosotros">
+
+            <div class="container about-content">
+
+                <span class="section-tag">SOBRE NOSOTROS</span>
+
+                <h2>EL UNIVERSO GAMER EN UN SOLO LUGAR</h2>
+
+                <p>
+                    GameZone es una página dedicada
+                    a presentar algunos de los videojuegos
+                    más populares del mundo.
+
+                    Nuestro objetivo es compartir información
+                    sobre sus características, historias
+                    y experiencias de juego.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- VENTANA DE INFORMACION -->
+    <div class="modal" id="gameModal" aria-hidden="true">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeModal"
+                    aria-label="Cerrar ventana">
+                &times;
+            </button>
+
+            <span class="section-tag">INFORMACIÓN DEL JUEGO</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <button class="btn-primary" id="modalOk">
+                ENTENDIDO
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <h2>GAME<span>ZONE</span></h2>
+
+            <p>
+                Explora. Juega. Descubre nuevas aventuras.
+            </p>
+
+            <p class="copyright">
+                © 2026 GameZone - Proyecto universitario
+                de contenerización con Docker.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
